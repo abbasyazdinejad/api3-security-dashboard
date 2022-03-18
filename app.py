@@ -11,6 +11,8 @@ def index():
     return render_template("index.html")
 
 
+
+
 @app.route("/")
 def res():
     return render_template("result.html")   
