@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>Abbas Security Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- My Charts -->
+    <script src="./scripts/chart1.js"></script>
+    <script src="./scripts/chart3.js"></script>
+    <script src="./scripts/chart4.js"></script>
+    <script src="./scripts/chart5.js"></script>
+    <script src="./scripts/chart6.js"></script>
+
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
+                    <img src="/images/logo1.JPG" width="230" height="80" />
+                </a>
+
+                <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/main.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="./result.html" class="nav-link px-2 text-white">Report</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-4 mx">
+
+        <div class=" row my-2 ">
+            <h1 class="text-center fw-bolder ">
+                API Security Management
+            </h1>
+        </div>
+
+        <div class="btn-group my-1 " role="group " aria-label="Basic radio toggle button group ">
+            <input type="radio " class="btn-check " name="btnradio " id="btnradio2 " autocomplete="off ">
+            <label class="btn btn-outline-primary active" for="btnradio0 ">General Overview</label>
+
+            <input type="radio " class="btn-check " name="btnradio " id="btnradio1 " autocomplete="off " checked>
+            <a href="/index.html " class="btn btn-outline-primary " for="btnradio1 ">API Security</a>
+
+            <input type="radio " class="btn-check " name="btnradio " id="btnradio2 " autocomplete="off ">
+            <label class="btn btn-outline-primary " for="btnradio2 ">Oracle Vulnerability</label>
+
+            <input type="radio " class="btn-check " name="btnradio " id="btnradio3 " autocomplete="off ">
+            <label class="btn btn-outline-primary " for="btnradio3 ">Scan History</label>
+        </div>
+
+        <div class="row ">
+            <div class="text-first my-1 ">
+                <a class="btn btn-secondary ">Register new API</a>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-6">
+                <div id="piechart1"></div>
+                <div id="piechart2"></div>
+            </div>
+
+            <div class=" col-6 ">
+                <h3 style="text-align:center ">Attack Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5413571.782876574!2d-84.4339031307414!3d44.310551030175304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9ad48a4a2383%3A0xcefe0a6b58950b4d!2sGuelph%2C%20ON%20N1G%204S7!5e0!3m2!1sen!2sca!4v1646590228201!5m2!1sen!2sca
+                    " width="100% " height="350 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+            </div>
+
+        </div>
+
+
+        <div class="row mt-1 mb-2 ">
+            <div class="col-6 ">
+                <h5 class="text-center fw-bolder mt-5">
+                    Computational resources
+                </h5>
+                <div id="chart5" style="width: 400px; height: 320px;"></div>
+            </div>
+            <div class="col-6 ">
+                <div id="chart4" style="width: 600px; height: 400px;"></div>
+            </div>
+
+        </div>
+
+        <div class="row mt-1 mb-2 ">
+            <div class="col-6 ">
+
+                <div>
+
+                    <div id="chart6" style="width: 400px; height: 500px;"></div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer class="bg-light text-center ">
+
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+            © 2020 Copyright:
+            <a class="text-dark " href="https://Blockparle.com/ ">Blockparle.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>
