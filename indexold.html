@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <title>Abbas Security Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <meta content="text/html; charset=utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <script>
+      //JSON.stringify()
+      //let object = localStorage.getItem("hajali");
+      //object = JSON.parse(object);
+      //console.log("object", object.a2);
+    </script>
+
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          ></ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input
+              type="search"
+              class="form-control form-control-dark"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <a
+              href="/out3.html"
+              button
+              type="button"
+              class="btn btn-outline-light me-2"
+              >Log out</a
+            >
+            <button type="button" class="btn btn-warning">User-1</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="text-first mx-2 my-5">
+        <a href="/reg.html" class="btn btn-secondary">Register new API</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <table class="col-12 table table-bordered table-striped">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th class="text-center" scope="col ">API3 ID</th>
+            <th class="text-center" scope="col ">API3 Name</th>
+            <th class="text-center" scope="col ">Blockchain Network</th>
+            <th class="text-center" scope="col ">Status</th>
+            <th class="text-center" scope="col ">Onboard Date</th>
+            <th class="text-center" scope="col ">Compliance score</th>
+            <th class="text-center" scope="col ">Scan</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <th class="text-center" scope="row ">1</th>
+            <td class="text-center">Openweather map</td>
+            <td class="text-center">Mainnet</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              7
+              <a
+                class="btn btn-sm btn-info mx-2"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+
+              <div class="spinner-grow text-success mx-2" target="_self "></div>
+              Online
+            </td>
+            <td class="text-center">2020-09-01</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 75%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 20%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row">2</th>
+            <td class="text-center">Weather-multi-value</td>
+            <td class="text-center">Rinkeby</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              4
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2022-08-01</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 5%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 15%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 80%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">3</th>
+            <td class="text-center">Coingecko</td>
+            <td class="text-center">Mainnet</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              2
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2019-02-15</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 14.98%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 37.5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 98.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">4</th>
+            <td class="text-center">Coin price</td>
+            <td class="text-center">Kovan</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              3
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2020-12-01</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 70.2%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 1.8%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 28%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">5</th>
+            <td class="text-center">Etherum price</td>
+            <td class="text-center">Rinkeby</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              6
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2021-06-16</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 12.98%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 27.5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 58.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">6</th>
+            <td class="text-center">geoPlugin </td>
+            <td class="text-center">Rinkeby</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              5
+              <a
+                class="btn btn-sm btn-info mx-2"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <div class="spinner-grow text-success mx-2" target="_self "></div>
+              Online
+            </td>
+            <td class="text-center">2019-09-19</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 4.98%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 17.5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 78.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">7</th>
+            <td class="text-center">Soccer-Sports Open Data</td>
+            <td class="text-center">Kovan</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              7
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan
+              </a>
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2019-12-05</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 24.98%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 27.5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 98.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">8</th>
+            <td class="text-center">Aviationstack</td>
+            <td class="text-center">Mainnet</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              8
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2020-06-09</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 4.98%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 17.5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 78.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">9</th>
+            <td class="text-center">MathPI</td>
+            <td class="text-center">Rinkeby</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              9
+              <a
+                class="btn btn-sm btn-info mx-3"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <em
+                class="fa fa-circle"
+                style="font-size: 36px; color: blue"
+              ></em>
+              Available
+            </td>
+            <td class="text-center">2021-12-19</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-danger"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 4.98%</a
+              >
+              <a
+                class="btn btn-sm btn-warning"
+                href="./report.html "
+                target="_self "
+                >Medium = 17.5%</a
+              >
+              <a
+                class="btn btn-sm btn-success"
+                href="./report.html "
+                target="_self "
+                >High = 78.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center" scope="row ">10</th>
+            <td class="text-center">GIPHY</td>
+            <td class="text-center">Mainnet</td>
+            <td class="text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-activity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                />
+              </svg>
+              88
+              <a
+                class="btn btn-sm btn-secondary"
+                href="./scan.html "
+                target="_self "
+                >Scan</a
+              >
+              <a
+                class="btn btn-sm btn-secondary"
+                href="./report.html "
+                target="_self "
+                >Report</a
+              >
+              <em
+                class="fa fa-circle mx-2"
+                style="font-size: 36px; color: gray"
+              ></em>
+              Disable
+            </td>
+            <td class="text-center">2022-06-12</td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-secondary"
+                href="./report.html "
+                target="_self "
+              >
+                Low = 9%</a
+              >
+              <a
+                class="btn btn-sm btn-secondary"
+                href="./report.html "
+                target="_self "
+                >Medium = 22.5%</a
+              >
+              <a
+                class="btn btn-sm btn-secondary"
+                href="./report.html "
+                target="_self "
+                >High = 66.1%</a
+              >
+            </td>
+            <td class="text-center">
+              <a
+                class="btn btn-sm btn-secondary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      const dataset = JSON.parse(localStorage.getItem("dataset"));
+      const tableBody = document.getElementById("tableBody");
+      let counetr = 10;
+      dataset.map((item) => {
+        counetr++;
+        let th = document.createElement("th");
+        th.className = "text-center";
+        th.innerHTML = counetr;
+        let td1 = document.createElement("td");
+        td1.className = "text-center";
+        td1.innerHTML = item.name;
+        let td2 = document.createElement("td");
+        td2.className = "text-center";
+        td2.innerHTML = item.network;
+        let td3 = document.createElement("td");
+        td3.className = "text-center";
+        td3.innerHTML = ` <div class="spinner-grow text-success" target="_self "></div>
+        Online
+                  `;
+        let td4 = document.createElement("td");
+        td4.className = "text-center";
+        td4.innerHTML = item.date;
+
+        let td5 = document.createElement("td");
+        td5.className = "text-center";
+        td5.innerHTML = ` 
+        <a class="btn btn-sm btn-danger" href="./report.html " target="_self ">Low = 2%</a>
+        <a class="btn btn-sm btn-warning"        href="./report.html "        target="_self "        >Medium = 8%</a>
+        <a class="btn btn-sm btn-success "        href="./report.html "        target="_self "        >High = 90%</a> `;
+
+        let td6 = document.createElement("td");
+        td6.className = "text-center";
+        td6.innerHTML = ` 
+     <a
+                class="btn btn-sm btn-primary"
+                href="./prescan2.html "
+                target="_self "
+                >New Scan</a
+              >
+  `;
+
+        let tr = document.createElement("tr");
+        tr.appendChild(th);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        tr.appendChild(td6);
+
+        tableBody.appendChild(tr);
+      });
+    </script>
+  </body>
+</html>
