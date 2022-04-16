@@ -38,7 +38,7 @@
                 </a>
 
                 <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/index2.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="/index.html" class="nav-link px-2 text-secondary">Home</a></li>
              
                 </ul>
 
@@ -212,27 +212,8 @@
             <td class="text-center">GIPHY</td>
             <td class="text-center">Mainnet</td>
             <td class="text-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-activity"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
-                />
-              </svg>
-              88
-              <a
-                class="btn btn-sm btn-secondary"
-                href="./scan.html "
-                target="_self "
-                >Scan</a
-              >
-              <a
+             
+                         <a
                 class="btn btn-sm btn-secondary"
                 href="./report.html "
                 target="_self "
@@ -271,9 +252,13 @@
         td2.innerHTML = item.network;
         let td3 = document.createElement("td");
         td3.className = "text-center";
-        td3.innerHTML = ` <div class="spinner-grow text-success" target="_self "></div>
-        Online
-                  `;
+        td3.innerHTML = `  <a href="/comp.html" class="btn btn-success">Compliance</a> <em
+        class="fa fa-circle"
+        style="font-size: 36px; color: blue"
+      ></em>
+      
+         Available   
+                  ` ;
         let td4 = document.createElement("td");
         td4.className = "text-center";
         td4.innerHTML = item.date;
@@ -289,5 +274,14 @@
         tableBody.appendChild(tr);
       });
     </script>
+    <footer class="bg-light text-center ">
+
+      <!-- Copyright -->
+      <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+          © 2022 Copyright:
+          <a class="text-dark " href="https://Blockparle.com/ ">Blockparle.com</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
   </body>
 </html>
