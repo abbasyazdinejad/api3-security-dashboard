@@ -111,7 +111,7 @@
             <td class="text-center">Rinkeby</td>
             <td class="text-center">
             
-              <a href="/comp.html" class="btn btn-success">Compliance</a>
+              <a href="/comp2.html" class="btn btn-success">Compliance</a>
               <em
                 class="fa fa-circle"
                 style="font-size: 36px; color: blue"
@@ -127,7 +127,7 @@
             <td class="text-center">Mainnet</td>
             <td class="text-center">
           
-              <a href="/comp.html" class="btn btn-success">Compliance</a>
+              <a href="/comp3.html" class="btn btn-success">Compliance</a>
               <em
                 class="fa fa-circle"
                 style="font-size: 36px; color: blue"
@@ -145,7 +145,7 @@
             <td class="text-center">Kovan</td>
             <td class="text-center">
              
-              <a href="/comp.html" class="btn btn-success">Compliance</a>
+              <a href="/comp4.html" class="btn btn-success">Compliance</a>
              
               <div class="spinner-grow text-success mx-2" target="_self "></div>
               Online
@@ -156,11 +156,11 @@
           </tr>
           <tr>
             <th class="text-center" scope="row ">5</th>
-            <td class="text-center">Etherum price</td>
+            <td class="text-center">MathPI</td>
             <td class="text-center">Rinkeby</td>
             <td class="text-center">
             
-              <a href="/comp.html" class="btn btn-success">Compliance</a>
+              <a href="/comp5.html" class="btn btn-success">Compliance</a>
               <em
                 class="fa fa-circle"
                 style="font-size: 36px; color: blue"
@@ -173,52 +173,15 @@
 
             
     
+         
           <tr>
-            <th class="text-center" scope="row ">9</th>
-            <td class="text-center">MathPI</td>
-            <td class="text-center">Rinkeby</td>
-            <td class="text-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-activity"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
-                />
-              </svg>
-              9
-              <a
-                class="btn btn-sm btn-info mx-3"
-                href="./scan.html "
-                target="_self "
-                >Scan</a
-              >
-              <em
-                class="fa fa-circle"
-                style="font-size: 36px; color: blue"
-              ></em>
-              Available
-            </td>
-            <td class="text-center">2021-12-19</td>
-          
-          </tr>
-          <tr>
-            <th class="text-center" scope="row ">10</th>
+            <th class="text-center" scope="row ">6</th>
             <td class="text-center">GIPHY</td>
             <td class="text-center">Mainnet</td>
             <td class="text-center">
              
-                         <a
-                class="btn btn-sm btn-secondary"
-                href="./report.html "
-                target="_self "
-                >Report</a
-              >
+                        
+              
               <em
                 class="fa fa-circle mx-2"
                 style="font-size: 36px; color: gray"
@@ -234,11 +197,14 @@
         </tbody>
       </table>
     </div>
-
+    <div style="padding: 0 7em 2em 0"></div>
+    <div style="padding: 0 7em 2em 0"></div>
+    <div style="padding: 0 7em 2em 0"></div>
+    <div style="padding: 0 7em 2em 0"></div>
     <script>
       const dataset = JSON.parse(localStorage.getItem("dataset"));
       const tableBody = document.getElementById("tableBody");
-      let counetr = 10;
+      let counetr = 6;
       dataset.map((item) => {
         counetr++;
         let th = document.createElement("th");

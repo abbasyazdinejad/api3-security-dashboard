@@ -29,7 +29,7 @@
         </div>
       </div>
       <h1 class="row titr">
-        <div class="text-center">Compliance scores-- Openweather map</div>
+        <div class="text-center">Compliance scores</div>
       </h1>
     </div>
       <div class="row mt-5">
@@ -38,7 +38,7 @@
             <img src="./images/f1.JPG" width="150" height="150" /> 
             <div class="card-body">
               <h2 class="card-title text-danger">Compliance score - Low</h2>
-              <h5 class="card-title text">API3-Openweather map</h5>
+              <h5 class="card-title text">API3-Weather-multi-value</h5>
               
               <div class="container mt-3">
               </div>      
@@ -54,16 +54,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="table-danger">
-                      <td>#Req1</td>
-                      <td>@AR1</td>
-                      <td><div>Request weather of London (latitude =35, longitude =139, datatime=2.5)</div> <div>  RRP =0xF0a346AA4be63bbedaF3B64277Be9e2D99A059E8 </div>
-                         <div>Airnode API-Key = fecd6a1324bbced0b4d2ca6cb10c5f22</div>    <p class="bg-warning text-danger">Fullfil -> (latitude =35, longitude =139, datatime=2.5) = London</p>  
-                            <p class="bg-danger text-white">Return -> (latitude =31, longitude =9, datatime=1.5) = Paris</p>                          </td>
-                      <td><div>Req1# -> Suspicious</div><div> *RRP->Valid</div><div> @AR1->Vulnerable</div></td>
-                      <td>High</td>
-                      <td><div>Injection</div> <div>Insecure Design</div></td>
-                    </tr>      
+                   
                     <tr class="table-danger">
                       <td>#Req1</td>
                         <td>@AR1</td>
@@ -88,36 +79,8 @@
                       <td><div>Injection </div> <div>Insecure Design</div> <div>Security Misconfiguration </div>
                     </tr>
       
-                    <tr class="table-danger">
-                      <td>#Req3</td>
-                      <td>@AR3</td>
-                      <td><div>Request weather of Rome (latitude =35, longitude =139, datatime=2.5)</div> <div>  RRP =0xF0a346AA4be63bbedaF3B64277Be9e2D99A059E8 </div>
-                        <div>Airnode API-Key = fecd6a1324bbced0b4d2ca6cb10c5f22</div>    <p class="bg-warning text-danger">Fullfil -> (latitude =35, longitude =139, datatime=2.5) = Rome</p>  
-                           <p class="bg-danger text-white">Return -> (latitude =31, longitude =9, datatime=1.5) = Istanbul</p>     </td>
-                      <td><div>Req1# -> Suspicious</div><div> *RRP->Valid</div><div> @AR1->Vulnerable</div></td>
-                      <td> High</td>
-                      <td><div>Injection </div>  <div>Security Misconfiguration </div>
-                    </tr>
-                    <tr class="table-danger">
-                      <td>#Req4</td>
-                      <td>@AR2</td>
-                      <td><div>Request weather of London (latitude =35, longitude =139, datatime=2.5)</div> <div>  RRP =0xF0a346AA4be63bbedaF3B64277Be9e2D99A059E8 </div>
-                        <div>Airnode API-Key = fecd6a1324bbced0b4d2ca6cb10c5f22</div>    <p class="bg-warning text-danger">Fullfil -> (latitude =35, longitude =139, datatime=2.5) = London</p>  
-                           <p class="bg-danger text-white">Return -> (latitude =31, longitude =9, datatime=1.5) = Paris</p>     </td>
-                      <td><div>Req1# -> Suspicious</div><div> *RRP->Valid</div><div> @AR1->Vulnerable</div></td>
-                      <td>High</td>
-                      <td> <div>Insecure Design</div> <div>Security Misconfiguration </div>
-                    </tr>
-                    <tr class="table-danger">
-                      <td>#Req5</td>
-                      <td>@AR1</td>
-                      <td><div>Request weather of New York (latitude =35, longitude =139, datatime=2.5)</div> <div>  RRP =0xF0a346AA4be63bbedaF3B64277Be9e2D99A059E8 </div>
-                        <div>Airnode API-Key = fecd6a1324bbced0b4d2ca6cb10c5f22</div>    <p class="bg-warning text-danger">Fullfil -> (latitude =35, longitude =139, datatime=2.5) = New York</p>  
-                           <p class="bg-danger text-white">Return -> (latitude =31, longitude =9, datatime=1.5) = Paris</p>     </td>
-                      <td><div>Req1# -> Suspicious</div><div> *RRP->Valid</div><div> @AR1->Vulnerable</div></td>
-                      <td>High</td>
-                      <td><div>Injection </div>  <div>Security Misconfiguration </div>
-                    </tr>
+                 
+           
               
                   </tbody>
                 </table>
@@ -168,16 +131,7 @@
                               <td>Meduim</td>
                               <td> <div>Insecure Design</div></td>
                             </tr>                          
-                            <tr class="table-warning">
-                              <td>#Req3</td>
-                              <td>@AR3</td>
-                              <td><div>Request weather of Rome (latitude =35, longitude =139, datatime=2.5)</div> <div>  RRP =0xF0a346AA4be63bbedaF3B64277Be9e2D99A059E8 </div>
-                                <div>Airnode API-Key = fecd6a1324bbced0b4d2ca6cb10c5f22</div>    <p class="bg-warning text-danger">Fullfil -> (latitude =35, longitude =139, datatime=2.5) = Rome</p>  
-                                   <p class="bg-danger text-white">Return -> (latitude =31, longitude =9, datatime=1.5) = Istanbul</p>     </td>
-                              <td><div>Req1# -> Suspicious</div><div> *RRP->Valid</div><div> @AR3->Normal</div></td>
-                              <td> Meduim</td>
-                              <td><div>Injection </div>  
-                            </tr>
+                       
                                                                       </tbody>
                         </table>
                     
@@ -205,16 +159,7 @@
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr class="table-success">
-                                        <td>#Req1</td>
-                                        <td>@AR1</td>
-                                        <td><div>Request weather of London (latitude =35, longitude =139, datatime=2.5)</div> <div>  RRP =0xF0a346AA4be63bbedaF3B64277Be9e2D99A059E8 </div>
-                                           <div>Airnode API-Key = fecd6a1324bbced0b4d2ca6cb10c5f22</div>    <p class="bg-success text-white">Fullfil -> (latitude =35, longitude =139, datatime=2.5) = London</p>  
-                                              <p class="bg-success text-white">Return -> (latitude =35, longitude =139, datatime=2.5) = London</p>                          </td>
-                                        <td><div>Req1# -> Normal</div><div> *RRP->Valid</div><div> @AR1->Secure</div></td>
-                                        <td>Low</td>
-                                        <td> NTH </td>
-                                      </tr>      
+                                         
                                       <tr class="table-success">
                                         <td>#Req1</td>
                                           <td>@AR1</td>
